@@ -1,0 +1,341 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 1em/1.38 Roboto;
+  color: rgb(0, 0, 0);
+}
+
+.element {
+  float: left;
+}
+
+.image {
+  display: block;
+  position: relative;
+  float: left;
+  width: 70px;
+  height: auto;
+  margin-top: -75px;
+  overflow: hidden;
+}
+
+.text {
+  float: left;
+  width: 80%;
+  text-align: center;
+}
+
+.element-1 {
+  width: 100%;
+  height: 115px;
+  background: url('../images/logo_bnnr(2).jpg') rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: left center;
+  overflow: visible;
+}
+
+.element-10 {
+  position: relative;
+  z-index: 12;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -309px 0 0 10%;
+  background: url('../images/FightClub_Print%20placement.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-11 {
+  position: relative;
+  z-index: 13;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -310px 0 0 30.39974%;
+  background: url('../images/Slack%20for%20iOS%20Upload.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-12 {
+  position: relative;
+  z-index: 14;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -310px 0 0 50.7994791666%;
+  background: url('../images/DnB(3).jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-13 {
+  position: relative;
+  z-index: 16;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -309px 0 0 71.19922%;
+  background: url('../images/Slack%20for%20iOS%20Upload%20(1).jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-14 {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  height: 108px;
+  background-color: rgb(0, 0, 0);
+}
+
+.element-15 {
+  position: relative;
+  z-index: 17;
+  width: 100%;
+  height: 31px;
+  background-color: rgb(237, 200, 98);
+}
+
+.element-2 {
+  clear: both;
+  width: 100%;
+  height: 704px;
+  background-image: url('../images/Pasted%20image%20at%202014_11_06%2009_49%20PM.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-3 {
+  position: relative;
+  clear: both;
+  z-index: 0;
+  width: 100%;
+  height: 812px;
+  margin-top: 26px;
+  background: url('../images/bg1.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.element-4 {
+  position: relative;
+  clear: both;
+  z-index: 2;
+  width: 100%;
+  height: 46px;
+  margin-top: -838px;
+  background-color: rgb(14, 43, 35);
+}
+
+.element-5 {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 760px;
+  margin-top: -64px;
+  background-color: rgb(255, 255, 255);
+}
+
+.element-6 {
+  position: relative;
+  z-index: 7;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -617px 0 0 10%;
+  background: url('../images/Bassmental.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-7 {
+  position: relative;
+  z-index: 8;
+  width: 18.75%;
+  height: 269px;
+  margin: -617px 0 0 30.3997395833%;
+  background: url('../images/STIG(3).jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-8 {
+  position: relative;
+  z-index: 9;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -618px 0 0 50.7994791666%;
+  background: url('../images/Pulp%20fiction_Print%20placement.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-9 {
+  position: relative;
+  z-index: 10;
+  width: 18.8333333333%;
+  height: 269px;
+  margin: -619px 0 0 71.19922%;
+  background: url('../images/Inglorious%20Bassterds.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-1 {
+  z-index: 19;
+  margin-left: 40.33203%;
+}
+
+.image-2 {
+  z-index: 18;
+  margin-left: 46.59505%;
+}
+
+.image-3 {
+  z-index: 20;
+  margin-left: 52.82943%;
+}
+
+.text-1 {
+  position: relative;
+  z-index: 3;
+  min-height: 278px;
+  margin: -826px 0 0 10%;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.text-2 {
+  position: relative;
+  clear: both;
+  z-index: 11;
+  min-height: 88px;
+  margin: -733px 0 0 10%;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 2.98;
+  color: rgb(0, 0, 0);
+}
+
+.text-3 {
+  position: relative;
+  clear: both;
+  z-index: 15;
+  min-height: 72px;
+  margin: -100px 0 0 10.41667%;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.text-4 {
+  position: relative;
+  clear: both;
+  z-index: 22;
+  min-height: 18px;
+  margin: -29px 0 0 10%;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
+
+.text-5 {
+  min-height: 22px;
+  margin: 1px 0 0 10%;
+  font: 100 0.813em/1.38 Lato;
+  color: rgb(0, 0, 0);
+}
+
+.text a {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.text span {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: Lato;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.text-1 a {
+  border-style: none;
+  font-family: Lato;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 300;
+}
+
+.text-2 a {
+  font-family: Lato;
+  font-style: inherit;
+  font-size: 1.75em;
+  font-weight: inherit;
+}
+
+.text-3 a {
+  border-style: none;
+  font-family: inherit;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: 300;
+}
+
+.text-4 a {
+  border-style: none;
+  font-family: Lato;
+  font-style: normal;
+  font-size: 0.813em;
+  font-weight: Regular;
+}
+
+.text-5 a {
+  border-style: none;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}

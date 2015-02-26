@@ -14,75 +14,85 @@
         <link href="assets/css/flat-ui.css" rel="stylesheet">
         <link href="assets/css/docs.min.css" rel="stylesheet">
         <script src="assets/plugins/galleria.flickr.min.js"></script>
-
-        <meta name="p:domain_verify" content="e588f15eabd9dcefa408d8c6c27fb14c"/>
+        <!-- FontAwesome added -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <!-- jQuery Vegas Scripts and CSS -->
+        <script type="text/javascript" src="assets/css/jquery-1.11.2.js"> </script>
+        <script type="text/javascript" src="assets/css/jquery.vegas.js"> </script>
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery.vegas.css" />
+        
+        <script>
+          $(function() {
+          // $.vegas({
+          // src:'bgpattern2.jpg'
+          // });
+          $.vegas('overlay', {
+          src:'subtledots.png'
+          });
+          });
+        </script>
         
         <style>
 
-        /* Style for our header texts
-    * --------------------------------------- */
-  h1{
-    font-size: 5em;
-    font-family: arial,helvetica;
-    color: #fff;
-    margin:0;
-    padding:0;
-  }
+          /* Style for our header texts
+           * --------------------------------------- */
+          h1{
+          font-size: 5em;
+          font-family: arial,helvetica;
+          color: #fff;
+          margin:0;
+          padding:0;
+          }
 
-  /* Centered texts in each section
-  * --------------------------------------- */
-  .section{
-    text-align:center;
-  }
+           /* Centered texts in each section
+          * --------------------------------------- */
+          .section{
+            text-align:center;
+          }
 
-  #myVideo{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-      background-image: /* our video */;
-      background-position: center center;
-      background-size: contain;
-      object-fit: cover; /*cover video background */
-  }
-
-
-
-  /* Layer with position absolute in order to have it over the video
-  * --------------------------------------- */
-  #section0 .layer{
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    left: 0;
-    top: 43%;
-    height: 100%;
-  }
+          #myVideo{
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          top:0;
+          right:0;
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          background-size: 100% 100%;
+          background-color: black; /* in case the video doesn't fit the whole page*/
+          background-image: /* our video */;
+          background-position: center center;
+          background-size: contain;
+          object-fit: cover; /*cover video background */
+          }
 
 
-  /* Bottom menu
-  * --------------------------------------- */
-  #infoMenu li a {
-    color: #fff;
-  }
-  </style>
 
-   </head>
+          /* Layer with position absolute in order to have it over the video
+          * --------------------------------------- */
+          #section0 .layer{
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            left: 0;
+            top: 43%;
+            height: 100%;
+          }
 
-  <body bgcolor="#533d83">
-      <div>
-        <video autoplay loop poster="assets/video.jpg" id="bgvid">
-            <source src="assets/video.mp4" type="video/mp4">
-            <source src="assets/video.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-        </video>
 
+            /* Bottom menu
+            * --------------------------------------- */
+            #infoMenu li a {
+              color: #fff;
+            }
+            </style>
+
+         </head>
+
+
+  <body background="bgpattern3.jpg">
+<!-- background="bgpattern.png" -->
 
     <br>
     <br>
@@ -92,22 +102,22 @@
     <br>
     <br>
     <br>
-    <br>
+
 
     <center>
-    <h1>
+    <h2>
       <strong>
         Hello! I'm Athul Krishnan
       </strong> 
-    </h1>
+    </h2>
 
 
         
      <p>
         <font color="#fffff">
-            <h6>
+            <h7>
               Entrepreneur | Photographer | Full-stack Developer
-            </h6>
+            </h7>
         </font>
     </p>
 
@@ -118,6 +128,7 @@
 <br>
 <br>
 <br>
+<br />    
 
 
 
@@ -125,7 +136,7 @@
             <img src="assets/images/hirefellas.png" width="70" height="70">
           </a>
 
-          <a href="mailto:mail@athul.in" target="_blank" title="Shoot me a mail">
+          <a href="mailto:mail@athulkrishan.com" target="_blank" title="Shoot me a mail">
             <img src="assets/images/mail.png" width="70" height="70">
           
           <a href="http://in.linkedin.com/in/athulkrishnan/" target="_blank" title="Athul's LinkedIn profile">
@@ -152,6 +163,8 @@
           <a href="http://www.last.fm/user/athulkrishnan/" target="_blank">
             <img src="assets/images/lastfm.png" width="70" height="70">
           </a> 	
+
+          
 
   </center>        
   </div>

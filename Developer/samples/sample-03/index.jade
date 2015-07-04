@@ -1,0 +1,326 @@
+doctype html(lang='en')
+head
+    meta(charset='utf-8')
+    |         
+    title Cinemagrapher
+    |         
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    |         
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    |         
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    |         
+    link(rel='shortcut icon', href='favicon.ico')
+    |         
+    link(rel='stylesheet', href='flat-ui/bootstrap/css/bootstrap.css')
+    |         
+    link(rel='stylesheet', href='flat-ui/css/flat-ui.css')
+    // Using only with Flat-UI (free)
+    link(rel='stylesheet', href='common-files/css/icon-font.css')
+    // end
+    link(rel='stylesheet', href='css/style.css')
+  |     
+  body
+    .page-wrapper
+      // header-11
+      header.header-11
+        .container
+          .row
+            .navbar.col-sm-12(role='navigation')
+              .navbar-header
+                button.navbar-toggle(type='button')
+                |                                 
+                a.brand(href='#')
+                  img(src='img/logo@2x.png', width='50', height='50', alt='')
+                  |  Cinemagrapher
+              |                             
+              .collapse.navbar-collapse.pull-right
+                ul.nav.pull-left
+                  //
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                |                                 
+                form.navbar-form.pull-left
+                  // <a class="btn btn-primary" href="#">SIGN IN</a>
+      |             
+      section.header-11-sub.bg-midnight-blue
+        .background
+        |                 
+        .container
+          .row
+            .col-sm-4
+              h3 Move beyond photographs!
+              |                             
+              p
+                | We believe that every image is a story, and every artist is a storyteller. Now, become a better storyteller with Cinemagrapher. 
+                br
+                |  
+                br
+                // Our app makes it easier to create beautiful and alluring cinemagraphs, so that you can focus on making great art.
+                | Signup below for exclusive early acess.
+              |                             
+              .signup-form
+                form
+                  .form-group
+                    input.form-control(type='text', placeholder='Your Name')
+                  |                                     
+                  .form-group
+                    input.form-control(type='text', placeholder='Email')
+                  //
+                    <div class="form-group">
+                    <div>
+                    <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div>
+                    <input type="password" class="form-control" placeholder="Confirmation">
+                    </div>
+                    </div
+                  .form-group
+                    button.btn.btn-block.btn-info(type='submit') Sign Up
+              |                             
+              .additional-links
+                // By signing up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            |                         
+            .col-sm-7.col-sm-offset-1.player-wrapper
+              video(width='650', height='366', autoplay='', loop='')
+                source(src='movie.mp4', type='video/mp4')
+                |                                   
+                source(src='movie.ogg', type='video/ogg')
+                |                                 Your browser does not support the video tag.
+              //
+                <div class="player">
+                <iframe src="http://player.vimeo.com/video/29568236?color=3498db" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              // <iframe src="http://www.youtube.com/embed/BCC7rFxo6QA" allowfullscreen></iframe>
+    // logos
+    //
+      <section class="logos">
+      <div class="container">
+      <div><img src="img/logos/mashable.png" alt="">
+      </div>
+      <div><img src="img/logos/guardian.png" alt="">
+      </div>
+      <div><img src="img/logos/forbes.png" alt="">
+      </div>
+      <div><img src="img/logos/red-bull.png" alt="">
+      </div>
+      <div><img src="img/logos/ny-times.png" alt="">
+      </div>
+      </div>
+      </section>
+    section.content-4
+      .container
+        h3.ani-processed(align='center', style='opacity: 1;') Features
+        |                 
+        .row.features
+          .col-sm-4.ani-processed(style='opacity: 1;')
+            img(src='img/illustrations/retina@2x.png', alt='', width='117', height='104', align='center')
+            |                         
+            h6 Automatic Loop Detection
+            |                         
+            p
+              | Our alogorithm detects the point of loop in the clip to provide a &quot;no jump&quot; frame transition.
+          |                     
+          .col-sm-4.ani-processed(style='opacity: 1;')
+            img(src='img/illustrations/clock@2x.png', alt='', width='104', height='104')
+            |                         
+            h6 Cloud Processing
+            |                         
+            p
+              | All processing happens on our cloud, hence very less resources are used on the client.
+          |                     
+          .col-sm-4.ani-processed(style='opacity: 1;')
+            img(src='img/illustrations/rocket@2x.png', alt='', width='101', height='101')
+            |                         
+            h6 4K and Full-HD Support
+            |                         
+            p
+              | Work with high resolution footage, and export to GIF, mp4 or mov - all without quality loss.
+        |                 
+        .row.features
+          .col-sm-4.ani-processed(style='opacity: 1;')
+            img(src='img/illustrations/responsive@2x.png', alt='', width='100', height='100')
+            |                         
+            h6 Device Independent
+            |                         
+            p
+              | Startups can save money on design and code and spend it on concept    and functionality.
+          |                     
+          .col-sm-4.ani-processed(style='opacity: 1;')
+            img(src='img/illustrations/magic@2x.png', alt='', width='100', height='100')
+            |                         
+            h6 Based on Bootstrap
+            |                         
+            p
+              | HTML layout is based on one of the common frameworks at this time - Bootstrap v 2.3.2
+          |                     
+          .col-sm-4.ani-processed(style='opacity: 1;')
+            img(src='img/illustrations/box@2x.png', alt='', width='176', height='127', style='left: -75px;')
+            |                         
+            h6 Share Easily
+            |                         
+            p
+              | Share your work easily on multiple platforms easily.
+    |         
+    section.content-25.bg-clouds
+      .container
+        .row
+          .col-sm-6
+            h3 The Second Sneak-Peek of Startup Design Framework
+            |                         
+            p
+              | The most important parts of the Startup Framework are Samples and the UI Kit that includes a
+              | set of different components. The samples consist of a set of 25 pages.
+              | Each of these pages you can use as-is or with new blocks from a UI Kit.
+            |                         
+            p
+              | These Samples will guide you through and show how to use the blocks and give you the feeling
+              | on how to play around using the components in the website building process.
+              | Plus, it will save you time! You can decide whether to create your site using UI Kit blocks or
+              | samples.
+          |                     
+          .col-sm-6.ani-processed(style='opacity: 1;')
+            img.pull-right.nosvg(src='../../common-files/icons/rocket-big-grey-bg@2x.png', alt='', width='402', height='401', style='display:block;')
+    // price-1
+    section.price-1
+      .container
+        h3 Take a look to our Plans
+        |                     
+        p.lead
+          | This is a probably the best plans ever born
+        |                     
+        .row.plans
+          .col-sm-4
+            .plan
+              .title Starter
+              |                                 
+              .price 19$/month
+              |                                 
+              .description
+                | 10,000 messages
+                br
+                |                                     
+                b unlimited
+                |  data
+                br
+                |                                     
+                b unlimited
+                |  users
+                br
+                |                                     first 10 day free
+              |                                 
+              a.btn.disabled(href='#') Your Current Plan
+          |                         
+          .col-sm-4
+            .plan
+              .title Professional
+              |                                 
+              .price 39$/month
+              |                                 
+              .description
+                | 10,000 messages
+                br
+                |                                     
+                b unlimited
+                |  data
+                br
+                |                                     
+                b unlimited
+                |  users
+                br
+                |                                     first 30 day free
+              |                                 
+              a.btn.btn-primary(href='#') Change to this Plan
+              |                                 
+              .ribbon NEW
+          |                         
+          .col-sm-4
+            .plan
+              .title Business
+              |                                 
+              .price 59$/month
+              |                                 
+              .description
+                | 10,000 messages
+                br
+                |                                     
+                b unlimited
+                |  data
+                br
+                |                                     
+                b unlimited
+                |  users
+                br
+                |                                     first 100 day free
+              |                                 
+              a.btn.btn-primary(href='#') Change to this Plan
+    // content-13
+    //
+      <section class="content-13 subscribe-form bg-turquoise">
+      <div class="container">
+      <div class="row">
+      <form>
+      <div class="col-sm-8">
+      <input type="text" placeholder="Enter your e-mail" spellcheck="false">
+      </div>
+      <div class="col-sm-4">
+      <button class="btn btn-large btn-primary" type="submit">
+      Subscribe now
+      </button>
+      </div>
+      </form>
+      </div>
+      </div>
+      </section>
+    // footer-2
+    // footer-12
+    //
+      <footer class="footer-12">
+      <div class="container">
+      Made with <span class="fui-heart"> </span> in India.
+      </div>
+      </footer>
+    //
+      <footer class="footer-2 bg-midnight-blue">
+      <div class="container">
+      <nav class="pull-left">
+      <ul>
+      <li class="active">
+      <a href="#">Home</a>
+      </li>
+      <li>
+      <a href="#">Company</a>
+      </li>
+      <li>
+      <a href="#">Portfolio</a>
+      </li>
+      <li>
+      <a href="#">Blog</a>
+      </li>
+      <li>
+      <a href="#">Contact</a>
+      </li>
+      </ul>
+      </nav>
+      <div class="social-btns pull-right">
+      <a href="#"><div class="fui-vimeo"></div><div class="fui-vimeo"></div></a>
+      <a href="#"><div class="fui-facebook"></div><div class="fui-facebook"></div></a>
+      <a href="#"><div class="fui-twitter"></div><div class="fui-twitter"></div></a>
+      </div>
+      <div class="additional-links">
+      Be sure to take a look to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+      </div>
+      </div>
+      </footer>
+    // Placed at the end of the document so the pages load faster
+    script(src='img/common-files/js/jquery-1.10.2.min.js')
+    |         
+    script(src='../../flat-ui/js/bootstrap.min.js')
+    |         
+    script(src='img/common-files/js/modernizr.custom.js')
+    |         
+    script(src='img/common-files/js/startup-kit.js')
+    |         
+    script(src='js/script.js')

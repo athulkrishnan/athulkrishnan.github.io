@@ -41,6 +41,19 @@
       <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
       <script type="text/javascript" src="js/modernizr.custom.js"></script>
+      <!-- owl-carousel autoplay -->
+      <script>
+         $("#intro").owlCarousel({
+
+         // Most important owl features
+
+         //Autoplay
+         autoPlay : 5000,
+         stopOnHover : false,
+         owl.trigger('owl.play',6000);
+
+         )}
+      </script>
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -138,9 +151,9 @@
          <div class="carousel-inner" role="listbox">
             <div class="item active">
                <!-- Slider Item #1 -->
-               <img src="img/slider/02.jpg" alt="...">
+               <img src="img/home/slider/02.jpg" alt="...">
                <div class="carousel-caption">
-                  <h1>Marvel<br>Structural Consultants </h1>
+                  <h1>Marvel<br><strong>Structural Consultants</strong></h1>
                   <p class="lead">Leading provider of structural engineering services.</p>
                   <!-- <a class="btn btn-default en-btn" href="about.html" role="button">Learn More</a> -->
                </div>
@@ -185,7 +198,7 @@
                </div>
                <!-- Right Content 8 Cols -->
                <div class="col-sm-8 col-md-8">
-                  <p> Marvel structural consultants is a Chennai based firm started by alumini of IIT Madras and specialized in providing quality structural engineering solutions to the growing construction industry. We are a group of professional structural engineers and draftsmen well versed in the latest national and international codes and standards.</p>
+                  <p> We are a Chennai based firm started by alumini of IIT Madras and specialized in providing quality structural engineering solutions to the growing construction industry. We are a group of professional structural engineers and draftsmen well versed in the latest national and international codes and standards.</p>
                   <!-- <a class="read-more" href="about.html">Read More <span class="fa fa-chevron-circle-right"></span></a> -->
                </div>
             </div>
@@ -216,77 +229,61 @@
                   <div class="service">
                      <!-- Service #1 -->
                      <a href="project-3col.html">
-                     <img src="img/services/01.jpg" alt="" class="img-responsive">
+                     <img src="img/home/services/engineering.jpg" alt="" class="img-responsive">
                      </a>
                      <a href="project-3col.html">
-                        <h4>Site Layout</h4>
+                        <h4>Engineering Services</h4>
                      </a>
-                     <!-- <p>Fusce laoreet ultricies sapien sed efficitur orci venenatis lotem ne ut Maecenas tortor magna quea velit inringilla sed. Praesent eget bibendum purus, quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies</p> -->
+                     <ul class="list-unstyled list-block">
+                        <li><i class="fa fa-check-square"></i>Preliminary Designs for Tendering</li>
+                        <li><i class="fa fa-check-square"></i>Finite Element Analysis</li>
+                        <li><i class="fa fa-check-square"></i>Structural Design</li>
+                        <li><i class="fa fa-check-square"></i>Research & Development</li>
+                     </ul>
                   </div>
                </div>
                <div class="col-sm-4 col-md-4">
                   <div class="service">
                      <!-- Service #2 -->
                      <a href="project-3col.html">
-                     <img src="img/services/02.jpg" alt="" class="img-responsive">
+                     <img src="img/home/services/drafting.jpg" alt="" class="img-responsive">
                      </a>
                      <a href="project-3col.html">
-                        <h4>Pile Layout and Column Position</h4>
+                        <h4>Drafting Services</h4>
                      </a>
-                     <!-- <p>Nulla interdum dapibus erat nec elementum. Fusce aliquet tempor mi, vitae sollicitudin arcu convallis id. Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque.</p> -->
+                     <ul class="list-unstyled list-block">
+                        <li><i class="fa fa-check-square"></i>General Arrangement Drawings</li>
+                        <li><i class="fa fa-check-square"></i>Detailed Engineering Drawings</li>
+                        <li><i class="fa fa-check-square"></i>Fabrication Drawings</li>
+                     </ul>
                   </div>
                </div>
                <div class="col-sm-4 col-md-4">
                   <div class="service">
                      <!-- Service #3 -->
                      <a href="project-3col.html">
-                     <img src="img/services/03.jpg" alt="" class="img-responsive">
+                     <img src="img/home/services/vas.jpg" alt="" class="img-responsive">
                      </a>
                      <a href="project-3col.html">
-                        <h4>Reinforcing Drawings</h4>
+                        <h4>Value Added Services</h4>
                      </a>
-                     <!-- <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Quisque porttitor sem libero auctor lorem fringilla sit amehasellus gravida nisi elitam egestda. Sedquis viverra enim. </p> -->
+                     <ul class="list-unstyled list-block">
+                        <li><i class="fa fa-check-square"></i>Forensic Study</li>
+                        <li><i class="fa fa-check-square"></i>Design Aid Preparation</li>
+                        <li><i class="fa fa-check-square"></i>Inspection & Certification</li>
+                        <li><i class="fa fa-check-square"></i>Onsite Support</li>
+                        <li><i class="fa fa-check-square"></i>Peer Review</li>
+                        <li><i class="fa fa-check-square"></i>Proof Checking</li>
+                     </ul>
                   </div>
                </div>
                <div class="col-sm-4 col-md-4">
-                  <div class="service">
-                     <!-- Service #3 -->
-                     <a href="project-3col.html">
-                     <img src="img/services/04.jpg" alt="" class="img-responsive">
-                     </a>
-                     <a href="project-3col.html">
-                        <h4>General Arrangement Drawings for Superstructure</h4>
-                     </a>
-                     <!-- <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Quisque porttitor sem libero auctor lorem fringilla sit amehasellus gravida nisi elitam egestda. Sedquis viverra enim. </p> -->
-                  </div>
-               </div>
-               <div class="col-sm-4 col-md-4">
-                  <div class="service">
-                     <!-- Service #3 -->
-                     <a href="project-3col.html">
-                     <img src="img/services/05.jpg" alt="" class="img-responsive">
-                     </a>
-                     <a href="project-3col.html">
-                        <h4>Analysis and Design Report</h4>
-                     </a>
-                     <!-- <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Quisque porttitor sem libero auctor lorem fringilla sit amehasellus gravida nisi elitam egestda. Sedquis viverra enim. </p> -->
-                  </div>
-               </div>
-               <div class="col-sm-4 col-md-4">
-                  <div class="service">
-                     <!-- Service #3 -->
-                     <a href="project-3col.html">
-                     <img src="img/services/06.jpg" alt="" class="img-responsive">
-                     </a>
-                     <a href="project-3col.html">
-                        <h4>Technical Support during Construction phase</h4>
-                     </a>
-                     <!-- <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque. Quisque porttitor sem libero auctor lorem fringilla sit amehasellus gravida nisi elitam egestda. Sedquis viverra enim. </p> -->
-                  </div>
                </div>
             </div>
          </div>
       </div>
+      </div>
+
       <!-- Projects
          ========================-->
       <div id="en-portfolio">
@@ -298,81 +295,82 @@
                <!-- <p>Quisque porttitor sem libero auctor lorem fringilla sit amehasellus gravida nisi elitam egestda. Sedquis viverra enim. </p> -->
                <a class="read-more" href="project-3col.html">View All Projects <span class="fa fa-chevron-circle-right"></span></a>
             </div>
-            <div id="portfolio-items" class="owl-carousel owl-theme">
-               <div class="item">
-                  <!-- Portfolio Item #1 -->
-                  <div class="hover-bg">
-                     <div class="hover-text off">
-                        <h4>Infrastructure Projects</h4>
-                        <br>
-                        <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque.  </p>
-                        <a class="read-more" href="single-project.html">View Project <span class="fa fa-chevron-circle-right"></span></a>
-                     </div>
-                     <img src="img/works/f01.jpg" alt="..." class="img-responsive">
+            <div class="row">
+               <div class="col-sm-4 col-md-4">
+                  <div class="service">
+                     <!-- Service #1 -->
+                     <a href="project-3col.html">
+                     <img src="img/home/latestprojects/infrastructure.jpg" alt="" class="img-responsive">
+                     </a>
+                     <a href="project-3col.html">
+                        <h4>Infrastructure</h4>
+                     </a>
                   </div>
                </div>
-               <div class="item">
-                  <!-- Portfolio Item #2 -->
-                  <div class="hover-bg">
-                     <div class="hover-text off">
-                        <h4>Industrial Projects</h4>
-                        <br>
-                        <p>Praesent eget bibendum purus, quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies.</p>
-                        <a class="read-more" href="single-project.html">View Project <span class="fa fa-chevron-circle-right"></span></a>
-                     </div>
-                     <img src="img/works/f02.jpg" alt="..." class="img-responsive">
+               <div class="col-sm-4 col-md-4">
+                  <div class="service">
+                     <!-- Service #2 -->
+                     <a href="project-3col.html">
+                     <img src="img/home/latestprojects/industrial.jpg" alt="" class="img-responsive">
+                     </a>
+                     <a href="project-3col.html">
+                        <h4>Industrial</h4>
+                     </a>
+                     
                   </div>
                </div>
-               <div class="item">
-                  <!-- Portfolio Item #3 -->
-                  <div class="hover-bg">
-                     <div class="hover-text off">
-                        <h4>Power Projects</h4>
-                        <br>
-                        <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque.  </p>
-                        <a class="read-more" href="single-project.html">View Project <span class="fa fa-chevron-circle-right"></span></a>
-                     </div>
-                     <img src="img/works/f03.jpg" alt="..." class="img-responsive">
+               <div class="col-sm-4 col-md-4">
+                  <div class="service">
+                     <!-- Service #3 -->
+                     <a href="project-3col.html">
+                     <img src="img/home/latestprojects/power.jpg" alt="" class="img-responsive">
+                     </a>
+                     <a href="project-3col.html">
+                        <h4>Power</h4>
+                     </a>
+                     
                   </div>
                </div>
-               <div class="item">
-                  <!-- Portfolio Item #4 -->
-                  <div class="hover-bg">
-                     <div class="hover-text off">
-                        <h4>Oil and Gas Projects</h4>
-                        <br>
-                        <p>Praesent eget bibendum purus, quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies.</p>
-                        <a class="read-more" href="single-project.html">View Project <span class="fa fa-chevron-circle-right"></span></a>
-                     </div>
-                     <img src="img/works/f04.jpg" alt="..." class="img-responsive">
+               <div class="col-sm-4 col-md-4">
+                  <div class="service">
+                     <!-- Service #3 -->
+                     <a href="project-3col.html">
+                     <img src="img/home/latestprojects/oil.jpg" alt="" class="img-responsive">
+                     </a>
+                     <a href="project-3col.html">
+                        <h4>Oil and Gas</h4>
+                     </a>
+                     
                   </div>
                </div>
-               <div class="item">
-                  <!-- Portfolio Item #5 -->
-                  <div class="hover-bg">
-                     <div class="hover-text off">
-                        <h4>Residential and Commercial Projects</h4>
-                        <br>
-                        <p>Vivamus aliquet rutrum dui a varius. Mauris ornare tortor in eleifend blanditullam ut ligula et neque.  </p>
-                        <a class="read-more" href="single-project.html">View Project <span class="fa fa-chevron-circle-right"></span></a>
-                     </div>
-                     <img src="img/works/f05.jpg" alt="..." class="img-responsive">
+               <div class="col-sm-4 col-md-4">
+                  <div class="service">
+                     <!-- Service #3 -->
+                     <a href="project-3col.html">
+                     <img src="img/home/latestprojects/residential.jpg" alt="" class="img-responsive">
+                     </a>
+                     <a href="project-3col.html">
+                        <h4>Residential and Commercial</h4>
+                     </a>
+                     
                   </div>
                </div>
-               <div class="item">
-                  <!-- Portfolio Item #6 -->
-                  <div class="hover-bg">
-                     <div class="hover-text off">
-                        <h4>Special Projects</h4>
-                        <br>
-                        <p>Praesent eget bibendum purus, quis placerat dui. Duis lacinia nisi sit ansequat lorem nunc, nec bibendum erat volutpat ultricies.</p>
-                        <a class="read-more" href="single-project.html">View Project <span class="fa fa-chevron-circle-right"></span></a>
-                     </div>
-                     <img src="img/works/f06.jpg" alt="..." class="img-responsive">
+               <div class="col-sm-4 col-md-4">
+                  <div class="service">
+                     <!-- Service #3 -->
+                     <a href="project-3col.html">
+                     <img src="img/home/latestprojects/special.jpg" alt="" class="img-responsive">
+                     </a>
+                     <a href="project-3col.html">
+                        <h4>Special</h4>
+                     </a>
+                     
                   </div>
                </div>
             </div>
          </div>
+      </div>
+      </div>
       </div>
       <!-- Testimonial Section
          ==================================-->
@@ -395,8 +393,44 @@
                   </div>
                   <div class="item">
                      <blockquote>
-                        Marvel Structural Consultants strive for perfection. Our ability to provide economic and efficient designs in a timely manner and our excellent customer satisfaction record makes us an invaluable partner in the construction industry. Don’t take our word for it. See what our Clients have to say about our People and Services.
-                        <footer></footer>
+                        "Marvel team is really a dedicated & hardworking in addition to being sincere and reasonable in rates too."
+                        <footer>Sudha Pillai, Manager, BGR Boilers Pvt. Ltd</footer>
+                     </blockquote>
+                  </div>
+                  <div class="item">
+                     <blockquote>
+                        "Practically speaking they are good and professsional."
+                        <footer>Iniyavan, JMD, Sriram Roofing and Structures</footer>
+                     </blockquote>
+                  </div>
+                  <div class="item">
+                     <blockquote>
+                        "Have enthusiasm, indepth knowledge and managing ability leaves Marvel to deliver its best."
+                        <footer>Sai Chaitanya, Voyants Solutions Pvt. Ltd.</footer>
+                     </blockquote>
+                  </div>
+                  <div class="item">
+                     <blockquote>
+                        "Marvelous structural strength of my architectural designs"
+                        <footer>Gerald Solomon Peter, Architect, Aspirage</footer>
+                     </blockquote>
+                  </div>
+                  <div class="item">
+                     <blockquote>
+                        "Has willingness to work towards achieving excellence and customer satisfaction."
+                        <footer>Hari, Business Development Manager, Tata Steel- Tubes Division</footer>
+                     </blockquote>
+                  </div>
+                  <div class="item">
+                     <blockquote>
+                        "Committed to quality work."
+                        <footer>Dr. Arun Menon, Assistant Professor,IIT Madras</footer>
+                     </blockquote>
+                  </div>
+                  <div class="item">
+                     <blockquote>
+                        "You have provided great service when I had a critical situation regarding structural drawings and you have provided me all the details under pressure. Hats off to you Team Marvel."
+                        <footer>Gerald Solomon Peter, Architect, Aspirage</footer>
                      </blockquote>
                   </div>
                   <div class="item">
@@ -418,88 +452,65 @@
       </div>
       <!-- Footer Area -->
       <div id="en-footer">
-         <div class="footer-content">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-5 col-md-5">
-                     <div class="widget">
-                        <div class="widget-title text-left">
-                           <h4>About Us</h4>
-                           <hr>
-                        </div>
-                        <a class="logo footer-logo" href="#">MARVEL</a>
-                        <br>
-                        <!-- <small>Marvel structural consultants is a Chennai based firm started by alumini of IIT Madras and specialized in providing quality structural engineering solutions to the growing construction industry. We are a group of professional structural engineers and draftsmen well versed in the latest national and international codes and standards. </small> -->
-                        <br>
-                        <br>
-                        <address>
-                           <strong>Marvel Structural Consultants</strong><br>
-                           Flat No.2, Door No. 18, Rohini Apartments<br>
-                           Shanti Street, Dr. Seethapathy Nagar<br>
-                           Velachery, Chennai,<br>
-                           Tamil Nadu – 600042<br>
-                           <abbr title="Phone">Phone:</abbr> +91 9444 710182
-                        </address>
+      <div class="footer-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-5 col-md-5">
+                  <div class="widget">
+                     <div class="widget-title text-left">
+                        <h4>About Us</h4>
+                        <hr>
                      </div>
-                  </div>
-                  <!-- <div class="col-sm-4 col-md-4">
-                     <div class="widget">
-                         <div class="widget-title text-left">
-                             <h4>Services</h4>
-                             <hr>
-                         </div>
-                         <ul class="list-unstyled list-block">
-                             <li><i class="fa fa-long-arrow-right"></i><a href="#">Site Layout</a></li>
-                             <li><i class="fa fa-long-arrow-right"></i> <a href="#">Pile Layout and Column Position</a></li>
-                             <li><i class="fa fa-long-arrow-right"></i><a href="#">Reinforcement Drawings</a></li>
-                             <li><i class="fa fa-long-arrow-right"></i><a href="#">General Arrangement Drawings for Superstructure</a></li>
-                             <li><i class="fa fa-long-arrow-right"></i><a href="#">Analysis and Design Report</a></li>
-                             <li><i class="fa fa-long-arrow-right"></i><a href="#">Technical Support during Construction phase</a></li>
-                         </ul>
-                     </div>
-                     </div> -->
-                  <div class="col-sm-3 col-md-3">
-                     <div class="widget">
-                        <div class="widget-title text-left">
-                           <h4>Page Links</h4>
-                           <hr>
-                        </div>
-                        <ul class="list-unstyled list-block">
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">Home</a></li>
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">About</a></li>
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">Services</a></li>
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">Team</a></li>
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">Projects</a></li>
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">Careers</a></li>
-                           <li><i class="fa fa-long-arrow-right"></i><a href="#">Contact Us</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-sm-4 col-md-4">
-                     <div class="widget">
-                        <div class="widget-title text-left">
-                           <h4>Stay Informed</h4>
-                           <hr>
-                        </div>
-                        <p>Register for our news alerts and receive the latest news and events.</p>
-                        <!--Newsletter form start-->
-                        <form role="form" action="http://bootstrapseven.com/demos/enhenyero/html/newsletter.php" method="post" autocomplete="off">
-                           <div class="form-group">
-                              <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required >
-                           </div>
-                           <button type="submit" class="btn btn-default en-btn">Subscribe</button>
-                        </form>
-                     </div>
+                     <img src="logo.small.png" style="width:180px;height:66px;border:0;">
+                     <!-- <a class="logo footer-logo" href="#">MARVEL</a> -->
+                     <address>
+                        <strong>Marvel Structural Consultants</strong><br>
+                        Flat No.2, Door No. 18, Rohini Apartments<br>
+                        Shanti Street, Dr. Seethapathy Nagar<br>
+                        Velachery, Chennai,<br>
+                        Tamil Nadu – 600042<br>
+                        <abbr title="Phone">Phone:</abbr> +91 9444 710182
+                     </address>
                   </div>
                </div>
-               <div class="clearfix"></div>
-               <div class="smallspacer"></div>
+               <div class="col-sm-3 col-md-3">
+                  <div class="widget">
+                     <div class="widget-title text-left">
+                        <h4>Navigate</h4>
+                        <hr>
+                     </div>
+                     <ul class="list-unstyled list-block">
+                        <li><i class="fa fa-angle-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="about.html">About</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="services.html">Services</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="project-3col.html">Projects</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="careers.html">Careers</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-md-4">
+                  <div class="widget">
+                     <div class="widget-title text-left">
+                        <h4>Stay Informed</h4>
+                        <hr>
+                     </div>
+                     <p>Register for our news alerts and receive the latest news and events.</p>
+                     <!--Newsletter form start-->
+                     <form role="form" action="http://bootstrapseven.com/demos/enhenyero/html/newsletter.php" method="post" autocomplete="off">
+                        <div class="form-group">
+                           <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required >
+                        </div>
+                        <button type="submit" class="btn btn-default en-btn">Subscribe</button>
+                     </form>
+                  </div>
+               </div>
             </div>
          </div>
-         <div class="bottom-footer">
-            <div class="container text-center">
-               <p>All Rights Reserved © 2015 | <a href="#">Marvel Structural Consultants.</a></p>
-            </div>
+      </div>
+      <div class="bottom-footer">
+         <div class="container text-center">
+            <p>All Rights Reserved © 2015 | <a href="#">Marvel Structural Consultants.</a></p>
          </div>
       </div>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

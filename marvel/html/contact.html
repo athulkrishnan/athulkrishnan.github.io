@@ -207,9 +207,16 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-group"> <!-- Your name input -->
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="Subject *" id="name" required data-validation-required-message="Subject">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
                         </div>
                         <textarea class="form-control" rows="6" placeholder="Tell Us Something..." id="message" required data-validation-required-message="Please enter a message."></textarea>
                         <p class="help-block text-danger"></p>
+
 
                         <div id="success"></div>
                         <button type="submit" class="btn btn-send en-btn dark">Send Message</button> <!-- Send button -->
@@ -254,121 +261,92 @@
     </div>
 
 
-    <!-- Footer Area -->
-    <div id="en-footer">
-        <div class="footer-content">
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-sm-5 col-md-5">
-                        <div class="widget">
-                            <div class="widget-title text-left">
-                                <h4>About Us</h4>
-                                <hr>
-                            </div>
-                            <a class="logo footer-logo" href="#">MARVEL</a>
-                            <br>
-                            <!-- <small>Marvel structural consultants is a Chennai based firm started by alumini of IIT Madras and specialized in providing quality structural engineering solutions to the growing construction industry. We are a group of professional structural engineers and draftsmen well versed in the latest national and international codes and standards. </small> -->
-                            <br>
-                            <br>
-                            <address>
-                                <strong>Marvel Structural Consultants</strong><br>
-                                Flat No.2, Door No. 18, Rohini Apartments<br>
-                                Shanti Street, Dr. Seethapathy Nagar<br>
-                                Velachery, Chennai,<br>
-                                Tamil Nadu – 600042<br>
-                                <abbr title="Phone">Phone:</abbr> +91 9444 710182
-                            </address>
-
+      <!-- Footer Area -->
+      <div id="en-footer">
+      <div class="footer-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-5 col-md-5">
+                  <div class="widget">
+                     <div class="widget-title text-left">
+                        <h4>About Us</h4>
+                        <hr>
+                     </div>
+                     <img src="logo.small.png" style="width:180px;height:66px;border:0;">
+                     <!-- <a class="logo footer-logo" href="#">MARVEL</a> -->
+                     <address>
+                        <strong>Marvel Structural Consultants</strong><br>
+                        Flat No.2, Door No. 18, Rohini Apartments<br>
+                        Shanti Street, Dr. Seethapathy Nagar<br>
+                        Velachery, Chennai,<br>
+                        Tamil Nadu – 600042<br>
+                        <abbr title="Phone">Phone:</abbr> +91 9444 710182
+                     </address>
+                  </div>
+               </div>
+               <div class="col-sm-3 col-md-3">
+                  <div class="widget">
+                     <div class="widget-title text-left">
+                        <h4>Navigate</h4>
+                        <hr>
+                     </div>
+                     <ul class="list-unstyled list-block">
+                        <li><i class="fa fa-angle-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="about.html">About</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="services.html">Services</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="project-3col.html">Projects</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="careers.html">Careers</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-md-4">
+                  <div class="widget">
+                     <div class="widget-title text-left">
+                        <h4>Stay Informed</h4>
+                        <hr>
+                     </div>
+                     <p>Register for our news alerts and receive the latest news and events.</p>
+                     <!--Newsletter form start-->
+                     <form role="form" action="http://bootstrapseven.com/demos/enhenyero/html/newsletter.php" method="post" autocomplete="off">
+                        <div class="form-group">
+                           <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required >
                         </div>
-                    </div>
-
-                    <!-- <div class="col-sm-4 col-md-4">
-                        <div class="widget">
-                            <div class="widget-title text-left">
-                                <h4>Services</h4>
-                                <hr>
-                            </div>
-                            <ul class="list-unstyled list-block">
-                                <li><i class="fa fa-long-arrow-right"></i><a href="#">Site Layout</a></li>
-                                <li><i class="fa fa-long-arrow-right"></i> <a href="#">Pile Layout and Column Position</a></li>
-                                <li><i class="fa fa-long-arrow-right"></i><a href="#">Reinforcement Drawings</a></li>
-                                <li><i class="fa fa-long-arrow-right"></i><a href="#">General Arrangement Drawings for Superstructure</a></li>
-                                <li><i class="fa fa-long-arrow-right"></i><a href="#">Analysis and Design Report</a></li>
-                                <li><i class="fa fa-long-arrow-right"></i><a href="#">Technical Support during Construction phase</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-
-                    <div class="col-sm-3 col-md-3">
-                        <div class="widget">
-                            <div class="widget-title text-left">
-                                <h4>Page Links</h4>
-                                <hr>
-                            </div>
-                            <ul class="list-unstyled list-block">
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">Home</a></li>
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">About</a></li>
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">Services</a></li>
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">Team</a></li>
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">Projects</a></li>
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">Careers</a></li>
-                               <li><i class="fa fa-long-arrow-right"></i><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4">
-                        <div class="widget">
-                            <div class="widget-title text-left">
-                                <h4>Stay Informed</h4>
-                                <hr>
-                            </div>
-                            <p>Register for our news alerts and receive the latest news and events.</p>
-                            <!--Newsletter form start-->
-                            <form role="form" action="http://bootstrapseven.com/demos/enhenyero/html/newsletter.php" method="post" autocomplete="off">
-                                <div class="form-group">
-                                  <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required >
-                                </div>
-                                <button type="submit" class="btn btn-default en-btn">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="clearfix"></div>
-                <div class="smallspacer"></div>
-
+                        <button type="submit" class="btn btn-default en-btn">Subscribe</button>
+                     </form>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container text-center">
-                <p>All Rights Reserved © 2015 | <a href="#">Marvel Structural Consultants.</a></p>
-            </div>
-        </div>
-    </div>
+         </div>
+      </div>
+      <div class="bottom-footer">
+         <div class="container text-center">
+            <p>All Rights Reserved © 2015 | <a href="#">Marvel Structural Consultants.</a></p>
+         </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+      <script type="text/javascript" src="js/nivo-lightbox.min.js"></script><!-- LightBox Nivo -->
+      <!-- Portfolio Filter -->
+      <script type="text/javascript" src="js/jquery.isotope.js"></script>
+      <script type="text/javascript" src="js/imagesloaded.js"></script>
+      <!-- Javascripts
+         ================================================== -->
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+      <!-- Parse Backend Integration -->
+      <script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="js/contactform.js"></script>
+      <!-- End Parse Backend Integration -->
 
-    <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
-    <script type="text/javascript" src="js/nivo-lightbox.min.js"></script><!-- LightBox Nivo -->
 
-    <!-- Portfolio Filter -->
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/imagesloaded.js"></script>
-    
-    <!-- Javascripts
-    ================================================== -->
-    <script type="text/javascript" src="js/main.js"></script>
-        <!-- Demo Switcher JS -->
-        <script type="text/javascript" src="../js/fswit.js"></script>
-
-    </body>
+      <script type="text/javascript" src="js/main.js"></script>
+      <!-- Demo Switcher JS -->
+      <script type="text/javascript" src="../js/fswit.js"></script>
+   </body>
 </html>

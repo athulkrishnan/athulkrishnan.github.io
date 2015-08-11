@@ -13,7 +13,7 @@ Parse.Cloud.define("sendEmail", function(request, response) {
    from: email,
    fromname: name,
    subject: "Marvel - Contact Us Message",
-   text: "Name: "+name+"\nEmail: "+email+"\nMessage:\n\n"+message
+   text: "Name: "+name+"\nEmail: "+email+"\nSubject: "+subject+"\nMessage:\n\n"+message
    }, {
      success: function(httpResponse) {
        console.log(httpResponse);

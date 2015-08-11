@@ -12,6 +12,11 @@
       <meta name="description" content="Marvel structural consultants is a Chennai based firm started by alumini of IIT Madras and specialized in providing quality structural engineering solutions to the growing construction industry. We are a group of professional structural engineers and draftsmen well versed in the latest national and international codes and standards.">
       <meta name="keywords" content="marvel structural consultants, marvel, civil engineering, iit madras, chennai">
       <meta name="author" content="Athul Krishnan : www.athulkrishnan.com">
+      <!-- Start Parse Backend Integration -->
+      <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/careers.js"></script>
+      <!-- End Parse Backend Integration -->
       <!-- Favicons
          ================================================== -->
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -47,6 +52,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+      <!-- Response Code Stylesheet -->
+      <style type="text/css">
+         #response { display:none; padding: 5px;}
+         .success { background-color: green;}
+         .error { background-color: red;}
+      </style>
+      <!-- End Response Code Stylesheet -->
       <!-- Switcher Only -->
       <link rel="stylesheet" id="switcher-css" type="text/css" href="../css/switcher.css" media="all" />
       <!-- END Switcher Styles -->
@@ -457,61 +469,66 @@
          </div>
       </div>
       <!-- Application Form -->
-        <div id="en-application">
-        <div class="container">
+      <div id="en-application">
+         <div class="container">
             <div class="row">
-
-                <!-- Left Content 4 Cols -->
-                <div class="col-sm-4 col-md-4">
-                    <div class="section-title text-left"> <!-- Left Section Title -->
-                        <h2>Fill in the Form <br>to Apply</h2>
-                        <hr>
-                        <p>Are you interested to be part of our excellent team?</p>
-                        <br>
-                    </div>
-                </div>
-
-                <!-- Right Content 8 Cols -->
-                <div class="col-sm-8 col-md-8">
-                    <!--<p><strong><em>Enhenyero INC.</em></strong> as one of the biggest Engineering Company in the World we have 6 other branches worldwide. As we continue to grow, we are planning to expand more of our branches from time to time. Visit the nearest branch in you place and make you Engineering Project done right. </p>
-
-                    <div class="clearfix"></div>
-                    <div class="smallspacer"></div> -->
-
-                    <form id="application-form" class="form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name Fullname">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Email">
-                            </div>
+               <!-- Left Content 4 Cols -->
+               <div class="col-sm-4 col-md-4">
+                  <div class="section-title text-left">
+                     <!-- Left Section Title -->
+                     <h2>Fill in the Form <br>to Apply</h2>
+                     <hr>
+                     <p>Are you interested to be part of our excellent team?</p>
+                     <br>
+                  </div>
+               </div>
+               <!-- Right Content 8 Cols -->
+               <div class="col-sm-8 col-md-8">
+                  <!--<p><strong><em>Enhenyero INC.</em></strong> as one of the biggest Engineering Company in the World we have 6 other branches worldwide. As we continue to grow, we are planning to expand more of our branches from time to time. Visit the nearest branch in you place and make you Engineering Project done right. </p>
+                     <div class="clearfix"></div>
+                     <div class="smallspacer"></div> -->
+                  <div id="response"></div>
+                  <br>
+                  <form id="app-form" class="form" name="sentMessage" novalidate>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <input type="text" id="appname"  class="form-control" placeholder="Full Name" required data-validation-required-message="Please enter your name.">
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Mobile Number">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Address">
-                            </div>
+                        <div class="col-md-6">
+                           <input type="email" id="appemail" class="form-control" placeholder="Email" required data-validation-required-message="Please enter your email.">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">Attached Resume Here</label>
-                            <input type="file" id="exampleInputFile">
-                            <p class="help-block">Attach .doc, .pdf files only (Min of 3MB)</p>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <input type="text" id="appphone" class="form-control" placeholder="Phone" required data-validation-required-message="Please enter your contact no.">
                         </div>
-                        <textarea class="form-control" rows="6" placeholder="Tell Us Amazing about You..."></textarea>
-                        <button type="submit" class="btn btn-default en-btn dark">Send Message</button>
-                    </form>
+                        <div class="col-md-6">
+                           <input type="text" id="appaddress" class="form-control" placeholder="Address" required data-validation-required-message="Please enter your address.">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <input type="text" id="appposition"  class="form-control" placeholder="Position(s) Applying For" required data-validation-required-message="Please enter your preferences.">
+                        </div>
+                     </div>
 
-                </div>
+                     <!-- <div class="form-group">
+                        <label for="exampleInputFile">Upload Resume:</label>
+                        <input type="file" id="resume">
+                        <p class="help-block">Attach .doc or .pdf files only (Max. of 3MB)</p>
+                        </div> -->
 
+                     <textarea id="appmessage" class="form-control" rows="6" placeholder="Tell us something amazing about you."></textarea required data-validation-required-message="Please tell us something about you.">
+                     
+                     <p class="help-block text-danger"></p>
+                     <div id="success"></div>
+                     <button type="submit" class="btn btn-default en-btn dark">Apply</button>
+                  </form>
+               </div>
             </div>
-        </div>
-
-    </div>
+         </div>
+      </div>
       <!-- End Application Form -->
-
       <!-- Footer Area -->
       <div id="en-footer">
       <div class="footer-content">
@@ -588,6 +605,7 @@
       <!-- Javascripts
          ================================================== -->
       <script type="text/javascript" src="js/main.js"></script>
+      <!-- End Parse Backend Integration -->
       <!-- Demo Switcher JS -->
       <script type="text/javascript" src="../js/fswit.js"></script>
    </body>

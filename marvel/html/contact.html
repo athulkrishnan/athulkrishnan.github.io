@@ -10,6 +10,12 @@
     <meta name="description" content="Marvel structural consultants is a Chennai based firm started by alumini of IIT Madras and specialized in providing quality structural engineering solutions to the growing construction industry. We are a group of professional structural engineers and draftsmen well versed in the latest national and international codes and standards."><meta name="keywords" content="marvel structural consultants, marvel, civil engineering, iit madras, chennai">
     <meta name="author" content="Athul Krishnan : www.athulkrishnan.com">
     
+    <!-- Parse Backend Integration -->
+      <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="js/emailer.js"></script>
+   <!-- End Parse Backend Integration -->
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -200,6 +206,9 @@
 
                 <!-- Right Content 8 Cols -->
                 <div class="col-sm-8 col-md-8">
+                    <!-- Form Submit Success/Fail -->
+                    <div id="response"></div>
+                    <br>
                     <form id="contact-form" class="form" name="sentMessage" novalidate>
                         <div class="row">
                             <div class="col-md-6">
@@ -216,7 +225,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group"> <!-- Your name input -->
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="Subject *" id="subject" required data-validation-required-message="Subject">
+                                    <input type="text" autocomplete="off" class="form-control" placeholder="Subject *" id="subject" required data-validation-required-message="subject">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -229,10 +238,8 @@
                         <div id="success"></div>
                         <button type="submit" class="btn btn-send en-btn dark">Send Message</button> <!-- Send button -->
                     </form>
-                    
-                    <!-- Form Submit Success/Fail -->
-                    <br>
-                    <div id="response"></div>
+
+
 
                     <div class="clearfix"></div>
                     <div class="spacer"></div>
@@ -350,11 +357,7 @@
          ================================================== -->
 
 
-      <!-- Parse Backend Integration -->
-      <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script src="js/emailer.js"></script>
-      <!-- End Parse Backend Integration -->
+
 
 
       <script type="text/javascript" src="js/main.js"></script>

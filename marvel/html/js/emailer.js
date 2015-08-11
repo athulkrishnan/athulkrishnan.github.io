@@ -27,7 +27,7 @@ $(document).ready(function(){
 
       error: function(object, error) {
         console.log(error);
-        $('#response').html('Error! Email not sent!').addClass('error').fadeIn('fast');
+        $('#response').html('Error! Message not sent. Please make sure all details are entered correctly.').addClass('error').fadeIn('fast');
       }
     });
   });

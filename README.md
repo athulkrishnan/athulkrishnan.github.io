@@ -1,5 +1,5 @@
 **Readme**
 
-Source code to my old personal webpage. Built on Bootstrap with [very] basic HTML.
+Source code to my GitHub.io page. Written on Bootstrap with basic HTML.
 
 The new website can be accessed at [www.athulkrishnan.com](http://www.athulkrishnan.com)

@@ -1,4 +1,4 @@
-**Readme**
+**athulkrishnan.github.io**
 
 Source code to my GitHub.io page. Written on Bootstrap with basic HTML.
 

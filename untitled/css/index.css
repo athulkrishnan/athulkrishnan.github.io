@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(0, 0, 0);
+  font: 400 0.875em/1 'Atlas Typewriter';
+  color: rgb(255, 255, 255);
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.container {
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 100%;
+  height: 524px;
+}
+
+.element {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.text {
+  position: relative;
+  float: left;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+._input {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 7;
+  width: 32%;
+  height: 35px;
+  margin: -72px 0 0 34%;
+  padding: 0 10px;
+  font-size: 0.929em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+  border-radius: 17px;
+  background-color: rgb(228, 221, 221);
+  font: 400 0.813em/1.38 Helvetica;}
+
+.element-1 {
+  clear: both;
+  z-index: 1;
+  height: 142px;
+  margin-top: -524px;
+}
+
+.element-2 {
+  z-index: 2;
+  height: 315px;
+  margin-top: -382px;
+  background-image: url('../images/Blot%20logo%20glitch-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.element-3 {
+  z-index: 4;
+  height: 175px;
+  margin-top: -67px;
+}
+
+.element-4 {
+  z-index: 6;
+  height: 91px;
+}
+
+.text-1 {
+  z-index: 3;
+  width: 49%;
+  min-height: 108px;
+  margin: -480px 0 0 25.5%;
+  font-family: AtlasTypewriterThin;
+  font-weight: normal;
+  line-height: 0.5;
+  text-align: right;
+}
+
+.text-2 {
+  clear: both;
+  z-index: 5;
+  width: 66%;
+  min-height: 125px;
+  margin: -153px 0 0 17%;
+  font-weight: 400;
+  text-align: center;
+}
+
+#color_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;
+  background-color: navy;
+  opacity: 0.3;
+}
+
+._button {
+  display: block;
+  float: left;
+  width: 11.9166666666%;
+  height: 35px;
+  margin: 442px 0 0 0.7838541666%;
+  border-radius: 3px;
+  background-color: rgb(228, 221, 221);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}

@@ -1,0 +1,139 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+
+/*Home background image*/
+
+.homebg {
+    background-image: url(../images/background.jpg);
+    overflow: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Color layover*/
+
+.colorbg {
+    background-color: rgba(75, 165, 194, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Center div vertically*/
+
+.verticalcenter {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+
+/*Placeholder text color*/
+
+::-webkit-input-placeholder {
+    color: white;
+    position: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+/*User Profile Avatar*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans);
+
+.pcard {
+  background-color: #f4f4f4;
+  width: 300px;
+  margin:  auto;
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.7);
+}
+
+.pcard-header {
+  overflow: hidden;
+  width: 100%;
+  max-height: 200px;
+}
+
+.pcard-header img{
+  width: 100%;
+}
+
+.pcard-content {
+  width: 85%;
+  margin: 35px auto;
+}
+
+.card-content h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+  color: #303F9F;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-content h4 {
+  font-size: 14px;
+  margin-top: 0;
+  color: #FF5252;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-content p {
+  color: #727272;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.card-footer {
+  border-top: solid 1px #B6B6B6;
+  padding: 5px;
+}
+
+.card-footer ul {
+  padding: 0;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.card-footer ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+.card-footer ul li i {
+  font-size: 2em;
+  color: #3F51B5;
+}

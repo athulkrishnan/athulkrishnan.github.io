@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery AJAX POST Form</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div id="response">
+    <pre></pre>
+</div>
+
+<form id="my-form">
+    <input type="text" id="uId" name="uId" placeholder="User ID" value="7t4TreXXmzVXnXkA4k9Iqq4SM0P2" />
+    <input type="text" id="timestamp" name="timestamp" value="12345567890">
+    <input type="text" id="title" name="title" placeholder="Post an update" />
+
+    <button type="submit">Submit</button>
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+    $.ajax({
+    url: 'http://www.locusapp.xyz/locusapp/announcements/set_announcement',
+    dataType: 'json',
+    type: 'post',
+    contentType: 'application/json',
+    data: JSON.stringify( { "uId": $('#uId').val(), "timestamp": $('#timestamp').val(), "title": $('#title').val() } ),
+    processData: false,
+    success: function( data, textStatus, jQxhr ){
+        $('#response pre').html( JSON.stringify( data ) );
+    },
+    error: function( jqXhr, textStatus, errorThrown ){
+        console.log( errorThrown );
+    }
+    });
+
+    // (function($){
+    //     function processForm( e ){
+    //         $.ajax({
+    //             url: 'http://www.locusapp.xyz/locusapp/announcements/set_announcement',
+    //             dataType: 'json',
+    //             type: 'post',
+    //             // contentType: 'application/json',
+    //             contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+    //             data: $(this).serialize(),
+    //             success: function( data, textStatus, jQxhr ){
+    //                 $('#response pre').html( data );
+    //             },
+    //             error: function( jqXhr, textStatus, errorThrown ){
+    //                 console.log( errorThrown );
+    //             }
+    //         });
+
+    //         e.preventDefault();
+    //     }
+
+    //     $('#my-form').submit( processForm );
+    // })(jQuery);
+</script>
+</body>
+</html>

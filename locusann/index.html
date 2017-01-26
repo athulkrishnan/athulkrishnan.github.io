@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>LocusApp Dashboard</title>
+    
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    
+  </head>
+  <body>
+  <header>LocusApp - Unmaad : Dashboard</header>
+    <form id="form" name="annForm" class="topBefore" action="http://www.locusapp.xyz/locusapp/announcements/set_announcement" method="POST">
+      
+      <input id="uId" type="text" value="7t4TreXXmzVXnXkA4k9Iqq4SM0P2">
+      <input id="timestamp" type="text" value="12345567890">
+      <textarea id="title" type="text" placeholder="MESSAGE"></textarea>
+      <input id="submit" type="submit" value="GO!" onclick="submitform()">
+      
+    </form>
+
+
+
+  
+  <script src="js/index.js"></script>
+  <script type="text/javascript">
+    var formData = JSON.stringify($("#annForm").serializeArray());
+  </script>
+  <script type="text/javascript">
+    $.ajax({
+  type: "POST",
+  url: "serverUrl",
+  data: formData,
+  success: function(){},
+  dataType: "json",
+  contentType : "application/json"
+});
+  </script>  
+</body>
+</html>

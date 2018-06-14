@@ -63,7 +63,7 @@ ul {
 
 
 /*---------------------------------------
-   TYPOGRAPHY                
+   TYPOGRAPHY
 -----------------------------------------*/
 
 
@@ -103,7 +103,7 @@ h6 { font-weight: 400 }
 
 
 /*---------------------------------------
-   LAYOUT          
+   LAYOUT
 -----------------------------------------*/
 
 
@@ -111,7 +111,7 @@ h6 { font-weight: 400 }
 
 .fp-section {
     position: relative;
-    -webkit-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -272,7 +272,7 @@ h6 { font-weight: 400 }
 
 
 /*---------------------------------------
-   MENUS          
+   MENUS
 -----------------------------------------*/
 
 
@@ -445,7 +445,7 @@ h6 { font-weight: 400 }
 
 
 /*---------------------------------------
-   ELEMENTS          
+   ELEMENTS
 -----------------------------------------*/
 
 
@@ -962,7 +962,7 @@ background: #1D9CD2;}
 /*CSS-Tooltip*/
 a.tooltip {outline:none; }
 a.tooltip strong {line-height:30px;}
-a.tooltip:hover {text-decoration:none;} 
+a.tooltip:hover {text-decoration:none;}
 a.tooltip span {
     z-index:10;display:none; padding:14px 20px;
     margin-top:-30px; margin-left:28px;
@@ -972,7 +972,7 @@ a.tooltip:hover span{
     display:inline; position:absolute; color:#111;
     border:1px solid #DCA; background:#fffAF0;}
 .callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
-    
+
 /*CSS3 extras*/
 a.tooltip span
 {
@@ -1036,7 +1036,7 @@ a.tooltip span
   left: 0;
   position: absolute;
   width: 100%;
-}  
+}
 
 /* CSS Triangles - see Trevor's post */
 .wrapper .tooltip:after {
@@ -1051,7 +1051,7 @@ a.tooltip span
   position: absolute;
   width: 0;
 }
-  
+
 .wrapper:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
@@ -1084,7 +1084,7 @@ a.tooltip span
     color: #fff;
     -webkit-font-smoothing: antialiased;
     border-radius: 3px;
-    text-align: center;    
+    text-align: center;
     }
 
 
@@ -1159,9 +1159,19 @@ a.tooltip span
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);   
+    -ms-transform: scale(1.5);
     -moz-transition: all 200ms ease-in;
     -moz-transform: scale(1.5);
     transition: all 200ms ease-in;
     transform: scale(1.5);
+}
+
+
+
+#videobeegee {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

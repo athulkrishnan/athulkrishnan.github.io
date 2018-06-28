@@ -1,0 +1,451 @@
+/*-------
+
+   Gallery
+
+-------*/
+.tva-gallery .tva-gallery-item {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .tva-gallery .tva-gallery-item {
+    width: 50%; } }
+@media (max-width: 400px) {
+  .tva-gallery .tva-gallery-item {
+    width: 100%; } }
+.tva-gallery .icon-focus,
+.tva-gallery .icon-video {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 24px);
+  font-family: 'MobiriseIcons' !important;
+  font-size: 3rem !important;
+  color: #fff;
+  opacity: 0;
+  transition: .2s opacity ease-in-out;
+  z-index: 5; }
+
+.tva-gallery .icon-focus::before {
+  content: '\e96b'; }
+
+.tva-gallery .icon-video::before {
+  content: '\e95c'; }
+
+.tva-gallery .tva-gallery-item > div:hover .icon-focus,
+.tva-gallery .tva-gallery-item > div:hover .icon-video {
+  opacity: 1; }
+
+.tva-gallery .tva-gallery-item img {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out; }
+
+.tva-gallery .tva-gallery-item > div:hover img {
+  opacity: 1; }
+
+.tva-gallery .tva-gallery-item > div {
+  background: #fff;
+  display: block;
+  outline: none;
+  position: relative; }
+
+.tva-gallery .tva-gallery-item .icon {
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: .2s opacity ease-in-out;
+  color: #000;
+  font-size: 30px;
+  height: 69px;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: .2s opacity ease-in-out;
+  width: 69px; }
+
+.tva-gallery .tva-gallery-item .icon::after,
+.tva-gallery .tva-gallery-item .icon::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 69px;
+  width: 1px;
+  margin-left: 34.5px;
+  background-color: #fff; }
+
+.tva-gallery .tva-gallery-item .icon::after {
+  width: 69px;
+  height: 1px;
+  margin-left: 0;
+  margin-top: 34.5px; }
+
+.tva-gallery .tva-gallery-item > div:hover .icon {
+  opacity: 1; }
+
+.tva-gallery .tva-gallery-item > div:hover::before {
+  opacity: .9; }
+
+.tva-gallery .tva-gallery-item > div:hover .tva-gallery-title {
+  background: transparent !important; }
+
+/* remove spacing */
+.tva-gallery .tva-gallery-row.no-gutter {
+  margin: 0; }
+
+.tva-gallery .tva-gallery-row.no-gutter .tva-gallery-item {
+  padding: 0; }
+
+/* container */
+.tva-gallery .container.tva-gallery-layout-default {
+  padding: 93px 0; }
+
+/* fix horizontal scrollbar */
+.tva-gallery .tva-gallery-layout-article,
+.tva-gallery .tva-gallery-layout-default {
+  overflow: hidden; }
+
+/* lightbox */
+.tva-gallery .modal {
+  position: fixed;
+  overflow: hidden;
+  padding-right: 0 !important; }
+
+.tva-gallery .modal-content {
+  border-radius: 0;
+  border: none;
+  background: transparent; }
+
+.tva-gallery .modal-body {
+  padding: 0; }
+
+.tva-gallery .modal-body img {
+  width: 100%; }
+
+.tva-gallery .modal .close {
+  position: fixed;
+  background: #1b1b1b;
+  opacity: .5;
+  font-size: 35px;
+  font-weight: 300;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  top: 2.5rem;
+  right: 2.5rem;
+  line-height: 70px;
+  border: none;
+  text-align: center;
+  text-shadow: none;
+  z-index: 5;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  font-family: 'MobiriseIcons'; }
+  .tva-gallery .modal .close::before {
+    content: '\e91a'; }
+
+.tva-gallery .modal .close:hover {
+  opacity: 1;
+  background: #000;
+  color: #fff; }
+
+.tva-gallery .modal-dialog {
+  max-width: 100% !important; }
+
+.tva-gallery .modal.in .modal-dialog {
+  margin: 0 auto; }
+
+/* modal back color opacity */
+.modal-backdrop.in {
+  opacity: .8;
+  filter: alpha(opacity=80); }
+
+@media (max-width: 768px) {
+  .tva-gallery .carousel-control,
+  .tva-gallery .carousel-indicators,
+  .tva-gallery .modal .close {
+    position: fixed; } }
+/* fix fade in effect */
+.tva-gallery .modal.fade .modal-dialog {
+  -webkit-transition: margin-top .3s ease-out;
+  -moz-transition: margin-top .3s ease-out;
+  -o-transition: margin-top .3s ease-out;
+  transition: margin-top .3s ease-out; }
+
+.tva-gallery .modal.fade .modal-dialog,
+.tva-gallery .modal.in .modal-dialog {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none; }
+
+/*-------
+
+   Slider
+
+-------*/
+.tva-slider .carousel-inner > .active,
+.tva-slider .carousel-inner > .next,
+.tva-slider .carousel-inner > .prev {
+  display: table; }
+
+.tva-slider .carousel-control {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 50%;
+  margin-top: -35px;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 35px;
+  border: 0;
+  opacity: .5;
+  text-shadow: none;
+  z-index: 5;
+  color: #fff;
+  -webkit-transition: all .2s ease-in-out 0s;
+  -o-transition: all .2s ease-in-out 0s;
+  transition: all .2s ease-in-out 0s; }
+
+.tva-gallery .tva-slider .carousel-control {
+  position: fixed; }
+
+@media (max-width: 991px) {
+  .tva-gallery .tva-slider .carousel-control {
+    bottom: 2.5rem;
+    margin-top: 0;
+    top: auto;
+    z-index: 17; } }
+.tva-gallery .tva-slider .carousel-inner > .active {
+  display: block; }
+
+.tva-slider .carousel-control.left {
+  left: 0;
+  margin-left: 2.5rem; }
+
+.tva-slider .carousel-control.right {
+  right: 0;
+  margin-right: 2.5rem; }
+
+.tva-slider .carousel-control .icon-next,
+.tva-slider .carousel-control .icon-prev {
+  margin-top: -18px;
+  font-size: 40px;
+  line-height: 27px; }
+
+.tva-slider .carousel-control:hover {
+  background: #1b1b1b;
+  color: #fff;
+  opacity: 1; }
+
+.tva-slider .carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.5rem !important; }
+
+@media (max-width: 543px) {
+  .tva-slider .carousel-indicators {
+    display: none; } }
+.carousel-indicators .active,
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+  background: #1b1b1b;
+  border: 0;
+  opacity: .5; }
+
+.carousel-indicators .active {
+  border: 4px solid #1b1b1b;
+  background: #fff; }
+
+.carousel-indicators li {
+  max-width: 15px;
+  max-height: 15px;
+  margin: 3px;
+  background: #1b1b1b;
+  border: 0;
+  border-radius: 50%;
+  opacity: .5; }
+
+.carousel-indicators li.active {
+  border: 4px solid #1b1b1b;
+  background: #fff; }
+
+.container .carousel-indicators {
+  margin-bottom: 3px; }
+
+.tva-gallery .tva-slider .carousel-indicators {
+  position: fixed;
+  margin-bottom: 2.5rem !important; }
+
+@media (max-width: 991px) {
+  .tva-gallery .tva-slider .carousel-indicators {
+    margin-bottom: 3.625rem !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; } }
+.tva-slider .carousel-indicators .active,
+.tva-slider .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background: #1b1b1b;
+  border: 0;
+  opacity: .5; }
+
+.tva-slider .carousel-indicators .active {
+  border: 4px solid #1b1b1b;
+  background: #fff; }
+
+@media (max-width: 767px) {
+  .tva-slider .carousel-control {
+    top: auto;
+    bottom: 20px; }
+
+  .tva-slider > .container .carousel-control {
+    margin-bottom: 0; } }
+/* boxed slider */
+.tva-slider > .boxed-slider {
+  position: relative;
+  padding: 93px 0; }
+
+.tva-slider > .boxed-slider > div {
+  position: relative; }
+
+.tva-slider > .container img {
+  width: 100%; }
+
+.tva-slider > .container img + .row {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2; }
+
+.tva-slider .tva-section {
+  padding: 0;
+  background-attachment: scroll; }
+
+.tva-slider .tva-table-cell {
+  padding: 0; }
+
+.tva-slider > .container .carousel-indicators {
+  margin-bottom: 3px; }
+
+/* article slider */
+.tva-slider > .article-slider .tva-section,
+.tva-slider > .article-slider .tva-section .tva-table-cell {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.modal-backdrop.show {
+  opacity: .7; }
+
+.video-container .tva-background-video iframe {
+  width: 100%;
+  height: 100%; }
+
+.tva-gallery-item__hided {
+  position: absolute !important;
+  left: 0 !important;
+  width: 0 !important;
+  height: 0;
+  padding: 0 !important; }
+
+.tva-gallery-item__hided img {
+  display: none !important; }
+
+.tva-gallery-item__hided span {
+  display: none !important; }
+
+.tva-gallery-filter {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .tva-gallery-filter li {
+    display: inline-block;
+    padding: 5px 0;
+    transition: all .3s ease-out; }
+    .tva-gallery-filter li .btn {
+      cursor: pointer; }
+  .tva-gallery-filter.gallery-filter__bg li {
+    color: #fff; }
+  .tva-gallery-filter.gallery-filter__bg .active {
+    color: #000;
+    background-color: #fff; }
+  .tva-gallery-filter ul {
+    display: inline-block;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+
+.tva-gallery-item > div {
+  position: relative; }
+
+.tva-gallery-item--p1 {
+  padding: 0.5rem; }
+
+.tva-gallery-item--p2 {
+  padding: 1rem; }
+
+.tva-gallery-item--p3 {
+  padding: 1.5rem; }
+
+.tva-gallery-item--p4 {
+  padding: 2rem; }
+
+.tva-gallery-item--p5 {
+  padding: 2.5rem; }
+
+.tva-gallery-item--p6 {
+  padding: 3rem; }
+
+.tva-gallery .tva-gallery-item--p4 {
+  width: 33.333%; }
+
+.tva-gallery .tva-gallery-item--p6, .tva-gallery .tva-gallery-item--p5 {
+  width: 50%; }
+
+@media (max-width: 992px) {
+  .tva-gallery-item--p1 {
+    padding: 0.5rem; }
+
+  .tva-gallery-item--p2 {
+    padding: 0.8rem; }
+
+  .tva-gallery-item--p3 {
+    padding: 1rem; }
+
+  .tva-gallery-item--p4 {
+    padding: 1.5rem; }
+
+  .tva-gallery-item--p5 {
+    padding: 1.8rem; }
+
+  .tva-gallery-item--p6 {
+    padding: 2rem; }
+
+  .tva-gallery .tva-gallery-item--p2,
+  .tva-gallery .tva-gallery-item--p3 {
+    width: 50%; }
+
+  .tva-gallery .tva-gallery-item--p6,
+  .tva-gallery .tva-gallery-item--p5,
+  .tva-gallery .tva-gallery-item--p4 {
+    width: 100%; } }
+@media (max-width: 400px) {
+  .tva-gallery .tva-gallery-item--p3,
+  .tva-gallery .tva-gallery-item--p2,
+  .tva-gallery .tva-gallery-item--p1 {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

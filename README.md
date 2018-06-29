@@ -1,6 +1,5 @@
 **athulkrishnan.github.io**
 
-Source to my GitHub.io page. Written on Bootstrap with basic HTML.
-Also acts as a simple CDN because Heorku doesn't allow media uploads on my Ghost based blog.
+Source to my GitHub page.
 
-The new website can be found at [www.athulkrishnan.com](http://www.athulkrishnan.com)
+Additionally acts as a simple CDN since Heroku doesn't allow media uploads on my Ghost based blog.

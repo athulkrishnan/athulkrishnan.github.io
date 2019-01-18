@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+</head>
+<body>
+<!-- <html>
+<head>
+<link href="whatev.css" type="text/css" rel="stylesheet">
+<title>Clickjack test page</title>
+</head>
+<body> -->
+<p>Website is vulnerable to clickjacking!</p>
+<!-- <iframe id="bottom" src="hack.html" width="1500"
+height="1500"> </iframe> -->
+<!-- <iframe id="top" src="https://www.paypal.com/webapps/hermes/button?version=4&env=production&style.size=medium&style.layout=vertical&funding.allowed=credit,venmo&sessionID=46171950e0&locale.x=en_US&logLevel=warn&uid=f6713002fd&xcomponent=1" width="1500"
+height="1500"> </iframe> -->
+
+<iframe id="top" src="tw.html" width="1500"
+height="1500"> </iframe>
+
+
+<!-- <script type="text/javascript">alert(1)</script> -->
+
+<style type="text/css">
+ #bottom    {position: absolute; top:50px; left:10px; opacity:1.0}
+ #top {position: absolute; top:50px; left:50px; opacity:0.2}
+</style>
+</body>
+</html>

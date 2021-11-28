@@ -1,0 +1,2 @@
+ <!ENTITY % param1 '<!ENTITY &#x25; external SYSTEM "file:///%data3;">'>
+
